@@ -18,15 +18,30 @@ Eventually I hope to add
 - Tagging or other metadata
 - Rating code tricks
 - Tricks of the day :D
+- Users
+- View code tricks by user
+- Pagination of results
+- Related code tricks
 
 # Running
 
+## VirtualEnv
+
+
+
+## VirtualEnv
+
+- `pip install virtualenv`
+- `source venv/bin/activate`'
+
+and when finished
+
+- `deactivate`
+
 ## Dependencies
 
-Developed using 
+- `pip install -r requirements.txt`
 
-- Python 3.7.4
-- Django 2.2.6
 
 # Database
 

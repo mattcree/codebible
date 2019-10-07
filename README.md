@@ -27,11 +27,10 @@ Eventually I hope to add
 
 ## VirtualEnv
 
-
-
-## VirtualEnv
+When in the root directory;
 
 - `pip install virtualenv`
+- `virtualenv venv`
 - `source venv/bin/activate`'
 
 and when finished
@@ -40,8 +39,13 @@ and when finished
 
 ## Dependencies
 
+While the virtual env is activated 
+
 - `pip install -r requirements.txt`
 
+If any new dependencies are added to the project, add them to the `requirements.txt` 
+
+- `pip freeze > requirements.txt`
 
 # Database
 
@@ -53,4 +57,4 @@ Should you need to change the models
 
 ## Running the Server
 
-`python manage.py runserver`
+- `python manage.py runserver`

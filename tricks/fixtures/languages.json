@@ -1,0 +1,22 @@
+[
+    {"model": "tricks.language", "pk": 1, "fields": {"name": "JavaScript", "syntax": "js"}},
+    {"model": "tricks.language", "pk": 2, "fields": {"name": "HTML", "syntax": "html"}},
+    {"model": "tricks.language", "pk": 3, "fields": {"name": "CSS", "syntax": "css"}},
+    {"model": "tricks.language", "pk": 4, "fields": {"name": "Typescript", "syntax": "ts"}},
+    {"model": "tricks.language", "pk": 5, "fields": {"name": "C#", "syntax": "csharp"}},
+    {"model": "tricks.language", "pk": 6, "fields": {"name": "Erlang", "syntax": "erlang"}},
+    {"model": "tricks.language", "pk": 7, "fields": {"name": "Elixir", "syntax": "elixir"}},
+    {"model": "tricks.language", "pk": 8, "fields": {"name": "Java", "syntax": "java"}},
+    {"model": "tricks.language", "pk": 9, "fields": {"name": "Bash", "syntax": "bash"}},
+    {"model": "tricks.language", "pk": 10, "fields": {"name": "Groovy", "syntax": "groovy"}},
+    {"model": "tricks.language", "pk": 11, "fields": {"name": "Kotlin", "syntax": "kotlin"}},
+    {"model": "tricks.language", "pk": 12, "fields": {"name": "Markdown", "syntax": "md"}},
+    {"model": "tricks.language", "pk": 13, "fields": {"name": "Git", "syntax": "git"}},
+    {"model": "tricks.language", "pk": 14, "fields": {"name": "Go", "syntax": "go"}},
+    {"model": "tricks.language", "pk": 15, "fields": {"name": "Haskell", "syntax": "haskell"}},
+    {"model": "tricks.language", "pk": 16, "fields": {"name": "JSON", "syntax": "json"}},
+    {"model": "tricks.language", "pk": 17, "fields": {"name": "Sass", "syntax": "scss"}},
+    {"model": "tricks.language", "pk": 18, "fields": {"name": "Python", "syntax": "py"}},
+    {"model": "tricks.language", "pk": 19, "fields": {"name": "SQL", "syntax": "sql"}},
+    {"model": "tricks.language", "pk": 20, "fields": {"name": "Rust", "syntax": "rust"}}
+]

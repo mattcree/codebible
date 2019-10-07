@@ -22,6 +22,8 @@ Eventually I hope to add
 - View code tricks by user
 - Pagination of results
 - Related code tricks
+- Alternative code tricks
+    - A way to submit a 'superior' trick which does the same thing
 
 # Running
 

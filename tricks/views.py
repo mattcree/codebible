@@ -1,20 +1,22 @@
 from django.shortcuts import render, HttpResponseRedirect
 from django.urls import reverse
 from django.views.generic.edit import CreateView
+from django.views.generic import ListView
 
-from .models import CodeTrick, CodeTrickCreateForm
+from .models import CodeTrick, CodeTrickForm
 
-def index(request):
-    tricks = CodeTrick.objects.all().order_by('-create_date')
-    return render(request, 'tricks/list.html', { 'tricks': tricks })
+class CodeTrickListView(ListView):
+    model = CodeTrick
+    template_name = 'tricks/list.html'
+    paginate_by = 4
 
 class CodeTrickCreateView(CreateView):
 
     def get(self, request, *args, **kwargs):
-        return render(request, 'tricks/new.html', {'form': CodeTrickCreateForm()})
+        return render(request, 'tricks/new.html', {'form': CodeTrickForm()})
 
     def post(self, request, *args, **kwargs):
-        form = CodeTrickCreateForm(request.POST)
+        form = CodeTrickForm(request.POST)
         if form.is_valid():
             code_trick = form.save()
             code_trick.save()

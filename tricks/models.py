@@ -1,5 +1,6 @@
 from django.db import models
 from django.forms import ModelForm
+from colorhash import ColorHash
 
 # Create your models here.
 
@@ -9,6 +10,9 @@ class Language(models.Model):
 
     def __str__(self):
         return self.name
+
+    def color(self):
+        return ColorHash(self.name).hex
 
 class CodeTrick(models.Model):
     title = models.CharField(max_length=200)
@@ -21,7 +25,7 @@ class CodeTrick(models.Model):
     def __str__(self):
         return self.title
 
-class CodeTrickCreateForm(ModelForm):
+class CodeTrickForm(ModelForm):
     class Meta:
         model = CodeTrick
-        fields = ['title', 'description', 'code', 'language']
+        fields = ['title', 'description', 'language', 'code']

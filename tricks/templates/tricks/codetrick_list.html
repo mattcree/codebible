@@ -1,0 +1,31 @@
+{% extends 'tricks/base.html' %}
+
+{% block content %}
+    {% if object_list %}
+        {% for trick in object_list %}
+            {% include "tricks/detail.html" with trick=trick %}
+        {% endfor %}
+    {% else %}
+        <p>No tricks are available.</p>
+    {% endif %}
+
+    {% if is_paginated %}
+        <div class="row">
+            <div class="col">
+                {% if page_obj.has_previous %}
+                    <a href="?page={{ page_obj.previous_page_number }}"><< Previous</a>
+                {% endif %}
+            </div>
+            <div class="col text-center">
+                <span class="page-current">
+                    Page {{ page_obj.number }} of {{ page_obj.paginator.num_pages }}
+                </span>
+            </div>
+            <div class="col text-right">
+                {% if page_obj.has_next %}
+                    <a href="?page={{ page_obj.next_page_number }}">Next >></a>
+                {% endif %}
+            </div>
+        </div>
+    {% endif %}
+{% endblock %}

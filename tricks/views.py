@@ -5,7 +5,8 @@ from django.views.generic.edit import CreateView
 from .models import CodeTrick, CodeTrickCreateForm
 
 def index(request):
-    return render(request, 'tricks/list.html', { 'tricks': CodeTrick.objects.all().order_by('-create_date') })
+    tricks = CodeTrick.objects.all().order_by('-create_date')
+    return render(request, 'tricks/list.html', { 'tricks': tricks })
 
 class CodeTrickCreateView(CreateView):
 

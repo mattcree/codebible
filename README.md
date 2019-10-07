@@ -4,6 +4,21 @@ A small application designed to capture code snippets which solve a specific pro
 
 Currently it depends on [PrismJS](https://prismjs.com) for the syntax highlighting.
 
+# Functionality
+
+Currently you can
+
+- View all code tricks
+- Add a new code trick
+
+Eventually I hope to add
+
+- View code tricks by language
+- Search code tricks
+- Tagging or other metadata
+- Rating code tricks
+- Tricks of the day :D
+
 # Running
 
 ## Dependencies

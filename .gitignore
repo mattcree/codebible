@@ -2,4 +2,4 @@ tricks/__pycache__/
 tricks/migrations/__pycache__/
 codebible/__pycache__/
 venv/
-.vscode/
+.vscode/.env

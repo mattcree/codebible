@@ -131,3 +131,4 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 # https://warehouse.python.org/project/whitenoise/
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+

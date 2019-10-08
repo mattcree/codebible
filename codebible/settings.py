@@ -26,7 +26,7 @@ SECRET_KEY = '1_0-t@)9^n_ip6$cs@jb7rlt3c6d4^9mlurwn*3hgs)wci@r#-'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', 'codebible.herokuapp.com']
 
 
 # Application definition

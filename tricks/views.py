@@ -7,11 +7,9 @@ from .models import CodeTrick, CodeTrickForm
 
 class CodeTrickListView(ListView):
     model = CodeTrick
-    template_name = 'tricks/list.html'
     paginate_by = 4
 
 class CodeTrickCreateView(CreateView):
-
     def get(self, request, *args, **kwargs):
         return render(request, 'tricks/new.html', {'form': CodeTrickForm()})
 

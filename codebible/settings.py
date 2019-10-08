@@ -78,8 +78,12 @@ WSGI_APPLICATION = 'codebible.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'dbcgqlkmq80d94',
+        'USER': 'xklfpzbzumujql',
+        'PASSWORD': '46605b96cd7288b15c587a5bffe00b7a860d2d2391651903ae908885c5164fee',
+        'HOST': 'postgres://xklfpzbzumujql:46605b96cd7288b15c587a5bffe00b7a860d2d2391651903ae908885c5164fee@ec2-54-195-252-243.eu-west-1.compute.amazonaws.com:5432/dbcgqlkmq80d94',
+        'PORT': '5432',
     }
 }
 

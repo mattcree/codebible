@@ -1,8 +1,11 @@
 tricks/__pycache__/
-<<<<<<< HEAD
 tricks/migrations/__pycache__/
 codebible/__pycache__/
-=======
->>>>>>> parent of 6a1fb88... Adding languages and playing with class based views and pagination@
 venv/
-.vscode/.env
+.vscode/
+.env
+venv
+*.pyc
+staticfiles
+.env
+db.sqlite3

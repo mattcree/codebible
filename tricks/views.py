@@ -1,20 +1,25 @@
 from django.shortcuts import render, HttpResponseRedirect
 from django.urls import reverse
 from django.views.generic.edit import CreateView
-from django.views.generic import ListView
 
-from .models import CodeTrick, CodeTrickForm
+from .models import CodeTrick, CodeTrickCreateForm
 
+<<<<<<< HEAD
 class CodeTrickListView(ListView):
     model = CodeTrick
     paginate_by = 4
+=======
+def index(request):
+    tricks = CodeTrick.objects.all().order_by('-create_date')
+    return render(request, 'tricks/list.html', { 'tricks': tricks })
+>>>>>>> parent of 6a1fb88... Adding languages and playing with class based views and pagination@
 
 class CodeTrickCreateView(CreateView):
     def get(self, request, *args, **kwargs):
-        return render(request, 'tricks/new.html', {'form': CodeTrickForm()})
+        return render(request, 'tricks/new.html', {'form': CodeTrickCreateForm()})
 
     def post(self, request, *args, **kwargs):
-        form = CodeTrickForm(request.POST)
+        form = CodeTrickCreateForm(request.POST)
         if form.is_valid():
             code_trick = form.save()
             code_trick.save()

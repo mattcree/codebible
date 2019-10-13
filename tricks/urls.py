@@ -1,8 +1,8 @@
 from django.urls import path
 
-from .views import CodeTrickListView, CodeTrickCreateView
+from . import views
 
 urlpatterns = [
-    path('', CodeTrickListView.as_view(), name='index'),
-    path('new', CodeTrickCreateView.as_view(), name='new')
+    path('', views.index, name='index'),
+    path('new', views.CodeTrickCreateView.as_view(), name='new')
 ]

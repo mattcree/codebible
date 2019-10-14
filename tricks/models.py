@@ -14,6 +14,9 @@ class Language(models.Model):
     def color(self):
         return ColorHash(self.name).hex
 
+    class Meta:
+        ordering = ['name']
+
 class CodeTrick(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField(max_length=1000)
@@ -24,6 +27,9 @@ class CodeTrick(models.Model):
 
     def __str__(self):
         return self.title
+
+    class Meta:
+        ordering = ['-create_date']
 
 class CodeTrickCreateForm(ModelForm):
     class Meta:

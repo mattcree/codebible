@@ -1,11 +1,15 @@
 {% extends 'tricks/base.html' %}
 
 {% block content %}
-    {% if tricks %}
-        {% for trick in tricks %}
+    {% if code_tricks %}
+        {% for trick in code_tricks %}
             {% include "tricks/detail.html" with trick=trick %}
         {% endfor %}
     {% else %}
         <p>No tricks are available.</p>
+    {% endif %}
+
+    {% if is_paginated %}
+        {% include "tricks/paginator.html" with page_obj=page_obj request=request %}
     {% endif %}
 {% endblock %}

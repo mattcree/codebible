@@ -1,3 +1,7 @@
 .trick-row {
     padding-top: 25px;
 }
+
+.container {
+    max-width: 1900px;
+}

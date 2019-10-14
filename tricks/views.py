@@ -3,11 +3,13 @@ from django.urls import reverse
 from django.views.generic.edit import CreateView
 from django.views.generic import ListView
 
-from .models import CodeTrick, CodeTrickCreateForm
+from .models import CodeTrick, CodeTrickCreateForm, Language
 
 class CodeTrickListView(ListView):
     model = CodeTrick
     paginate_by = 4
+    context_object_name = 'code_tricks'
+    template_name = 'tricks/list.html'
 
 class CodeTrickCreateView(CreateView):
     def get(self, request, *args, **kwargs):

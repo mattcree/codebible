@@ -1,5 +1,5 @@
 colorhash==1.0.2
-django==2.2.6
+django==2.2.21
 django-crispy-forms==1.7.2
 django-heroku==0.3.1
 gunicorn==19.9.0
